@@ -87,72 +87,31 @@
         </div>
     </section>
 
-   <!-- Contact Section -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact</h2>
-        <div class="contact-card">
-            <!-- Contact Form -->
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-<br>
-            <!-- Contact Popup Button -->
-            <button id="contactPopupBtn" class="contact-popup-btn">Contact Us</button>
-
-            <!-- Popup Modal -->
-            <div id="contactPopup" class="contact-popup">
-                <div class="contact-popup-content">
-                    <span class="close-btn" id="closePopupBtn">&times;</span>
-                    <h3>Contact Information</h3>
-                    <p><strong>Phone:</strong> <a href="tel:+6364769178">+6364769178</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:deannaresh12@gmail.com">deannaresh12@gmail.com</a></p>
-                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/qr/GRYJFE6NJX6GI1" target="_blank">Chat on WhatsApp</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-card">
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/naresh-r-43b93b2a9" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/n_a_r_e_s_h_007___?igsh=MTRneGxibjd0MGc1eg==" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/Naresh602306" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- Scripts for Popup Modal -->
-    <script>
-        var popup = document.getElementById("contactPopup");
-        var openBtn = document.getElementById("contactPopupBtn");
-        var closeBtn = document.getElementById("closePopupBtn");
-
-        // Open the popup
-        openBtn.onclick = function() {
-            popup.style.display = "block";
-        }
-
-        // Close the popup
-        closeBtn.onclick = function() {
-            popup.style.display = "none";
-        }
-
-        // Close the popup if the user clicks outside the content
-        window.onclick = function(event) {
-            if (event.target == popup) {
-                popup.style.display = "none";
-            }
-        }
-    </script>
-
-    <!-- External JS Files -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <script src="script.js"></script>
-    <script src="script1.js"></script>
 </body>
 
 </html>
